@@ -1,8 +1,9 @@
 /* estilos generales */
 body{
     margin: 0 auto;
-    font-family:  'Work Sans', sans-serif;;
+    font-family:  'Work Sans', sans-serif;
     width: 414px;
+    overflow-x: hidden;
 }
 
 
