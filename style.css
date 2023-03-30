@@ -1,0 +1,322 @@
+/* estilos generales */
+body{
+    margin: 0 auto;
+    font-family:  'Work Sans', sans-serif;;
+    width: 414px;
+}
+
+
+/* nav */
+nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav .arrow{
+    position: relative;
+    box-sizing: border-box;
+    width: 36px;
+    height: 34px;
+
+    border: 1px solid rgba(55, 73, 87, 0.2);
+    border-radius: 8px;
+
+    animation: move 2s infinite;
+}
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+nav .arrow:hover{
+    background-color: rgb(55, 73, 87, 0.2);
+}
+
+
+nav .arrow a img{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+/* producto-titulo */
+nav h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* bolsa de compras */
+nav .bolsa{
+    position: relative;
+    box-sizing: border-box;
+    width: 36px;
+    height: 34px;
+
+    border: 1px solid rgba(55, 73, 87, 0.2);
+    border-radius: 8px;
+}
+nav .bolsa:hover{
+    background-color: rgb(55, 73, 87, 0.2);
+}
+nav .bolsa img{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+nav .bolsa p{
+    position: absolute;
+    top: -70%;
+    left: -40%;
+    color: white;
+
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+  /* seccion Hero */
+.section-hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    margin-top: 25px;
+}
+
+/* producto */
+.section-hero .product{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos de la seccion izquierda */
+.section-hero .product .left{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.section-hero .product .left .size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+}
+.section-hero .product .left .size p{
+    font-size: 20px;
+}
+.section-hero .product .left .size div{
+    width: 54px;
+    height: 36px;
+    border: 0.825px solid #DEE3EB;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-hero .product .left .size div:hover{
+    background-color: rgb(55, 73, 87, 0.2);
+}
+.section-hero .product .left .size .uk-7{
+    border: 0.825px solid #000000;
+    border-radius: 12px;
+}
+.section-hero .product .left .price p{
+    font-size: 24px;
+}
+.section-hero .product .left .price .descuento{
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    margin-top: -20px;
+}
+
+/* estilos de la seccion del zapato nike */
+.section-hero .product .shoes{
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-hero .product .shoes .nike{
+    width: 60%;
+    z-index: -2;
+}
+.section-hero .product .shoes .nike-rojo{
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: -30%;
+    z-index: -1;
+
+    animation: move-red 4s infinite;
+}
+
+@keyframes move-red {
+    0% { transform: translatey(0); }
+    50% { transform: translatey(10px); }
+    100% { transform: translatey(0); }
+  }
+
+
+/* boton de guardar */
+.section-hero .product .save{
+    width: 5%;
+}
+.section-hero .product .save div{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+    z-index: 1;
+}
+.section-hero .product .save div:hover{
+    background-color: rgb(55, 73, 87, 0.2);
+}
+
+
+
+/* caja de nike */
+.section-hero .caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+/* barra negra */
+.section-hero .caja .swipe-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 42px;
+    height: 100px;
+    border-radius: 20px;
+}
+.section-hero .caja .swipe-group .flechas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation: move-arrow 2s infinite;
+}
+@keyframes move-arrow {
+    0% { transform: translatey(0); }
+    50% { transform: translatey(10px); }
+    100% { transform: translatey(0); }
+  }
+
+  
+
+/* caja de zapatos */
+.section-hero .caja .caja-nike{
+    margin-top: -60px;
+    z-index: -1;
+}
+
+
+/* animacion en cascada para toda la web */
+.cascada {
+  opacity: 0; /* La imagen se inicia con opacidad 0 */
+  animation: cascada 1s ease-in-out forwards; /* Se inicia la animación con la duración de 1 segundo */
+}
+
+@keyframes cascada {
+  from {
+    opacity: 0; /* La imagen se inicia con opacidad 0 */
+    transform: translateY(-30px); /* La imagen se mueve hacia abajo 50 píxeles */
+  }
+  to {
+    opacity: 1; /* La imagen finaliza con opacidad 1 */
+    transform: translateY(0); /* La imagen vuelve a su posición original */
+  }
+}
+
+/* animacion de aparicion de nike */
+.aparecer {
+  opacity: 0; /* La imagen se inicia con opacidad 0 */
+  animation: aparecer 1.5s ease-in-out forwards; /* Se inicia la animación con la duración de 1 segundo */
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0.5; /* La imagen se inicia con opacidad 0 */
+    transform: translateY(200px); /* La imagen se mueve hacia abajo 50 píxeles */
+  }
+  to {
+    opacity: 1; /* La imagen finaliza con opacidad 1 */
+    transform: translateY(0); /* La imagen vuelve a su posición original */
+  }
+}
+
+/* aparicion de los zapatos */
+.zapato {
+    opacity: 0;
+    animation: zapato 2s ease-in-out forwards;
+}
+
+@keyframes zapato {
+    0% {
+        opacity: 0,5;
+        transform: translateY(400px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+/* caja */
+.animate {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0;
+        transform: translateY(100px);
+    }
+    to { opacity: 1; 
+        transform: translateY(0);
+    }
+  }
+
